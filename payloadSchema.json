@@ -1,0 +1,59 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome4",
+    "definitions": {
+        "Welcome4": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "cars": {
+                    "$ref": "#/definitions/Cars"
+                }
+            },
+            "required": [
+                "cars"
+            ],
+            "title": "Welcome4"
+        },
+        "Cars": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Nissan": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Ford"
+                    }
+                },
+                "Ford": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Ford"
+                    }
+                }
+            },
+            "required": [
+                "Ford",
+                "Nissan"
+            ],
+            "title": "Cars"
+        },
+        "Ford": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "model": {
+                    "type": "string"
+                },
+                "doors": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "doors",
+                "model"
+            ],
+            "title": "Ford"
+        }
+    }
+}
