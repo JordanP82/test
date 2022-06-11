@@ -1,6 +1,6 @@
 {
     "cars": {
-        "Make": {
+        "Make": [{
 
                 "Nissan": [{
                         "model": "Sentra",
@@ -22,7 +22,7 @@
                         "doors": 4
                     }
                 ]
-		} 
+		}] 
         
     }
 }
