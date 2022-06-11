@@ -31,50 +31,44 @@
             "properties": {
 				
 	
+	
 
 	"cars": {
 		"type": "object",
 		"properties": {
-			"Make": {
+			"Nissan": {
 				"type": "array",
 				"items": {
 					"type": "object",
 					"properties": {
-						"Nissan": {
-							"type": "array",
-							"items": {
-								"type": "object",
-								"properties": {
-									"model": {
-										"type": "string"
-									},
-									"doors": {
-										"type": "integer",
-										"format": "int32"
-									}
-								}
-							}
+						"model": {
+							"type": "string"
 						},
-						"Ford": {
-							"type": "array",
-							"items": {
-								"type": "object",
-								"properties": {
-									"model": {
-										"type": "string"
-									},
-									"doors": {
-										"type": "integer",
-										"format": "int32"
-									}
-								}
-							}
+						"doors": {
+							"type": "integer",
+							"format": "int32"
+						}
+					}
+				}
+			},
+			"Ford": {
+				"type": "array",
+				"items": {
+					"type": "object",
+					"properties": {
+						"model": {
+							"type": "string"
+						},
+						"doors": {
+							"type": "integer",
+							"format": "int32"
 						}
 					}
 				}
 			}
 		}
 	}
+
 				
 				
 
