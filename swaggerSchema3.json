@@ -30,40 +30,43 @@
             "type": "object",
             "properties": {
 				
-			
+	
 
 	"cars": {
 		"type": "object",
 		"properties": {
 			"Make": {
-				"type": "object",
-				"properties": {
-					"Nissan": {
-						"type": "array",
-						"items": {
-							"type": "object",
-							"properties": {
-								"model": {
-									"type": "string"
-								},
-								"doors": {
-									"type": "integer",
-									"format": "int32"
+				"type": "array",
+				"items": {
+					"type": "object",
+					"properties": {
+						"Nissan": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"model": {
+										"type": "string"
+									},
+									"doors": {
+										"type": "integer",
+										"format": "int32"
+									}
 								}
 							}
-						}
-					},
-					"Ford": {
-						"type": "array",
-						"items": {
-							"type": "object",
-							"properties": {
-								"model": {
-									"type": "string"
-								},
-								"doors": {
-									"type": "integer",
-									"format": "int32"
+						},
+						"Ford": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"model": {
+										"type": "string"
+									},
+									"doors": {
+										"type": "integer",
+										"format": "int32"
+									}
 								}
 							}
 						}
