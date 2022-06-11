@@ -1,0 +1,69 @@
+{
+
+    "paths": {
+        "/JordanP82/test/master/payload.json": {
+            "parameters": [],
+            "get": {
+                "tags": [
+                    "Cars_Array"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An operation",
+                        "headers": {
+                            "Retry-After": {
+                                "type": "integer"
+                            }
+                        },
+                        "schema": {
+                            "$ref": "#/definitions/response"
+                        },
+                    }
+                }
+            }
+        }
+    },
+
+    "definitions": {
+
+        "response": {
+            "type": "object",
+            "properties": {
+				
+				
+				
+				
+	"cars": {
+		"type": "object",
+		"properties": {
+			"Make": {
+				"type": "array",
+				"items": {
+					"type": "object",
+					"properties": {
+						"Nissan": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"model": {
+										"type": "string"
+									},
+									"doors": {
+										"type": "integer",
+										"format": "int32"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+				
+				
+
+        }
+    }
