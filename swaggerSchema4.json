@@ -24,7 +24,7 @@
         },
 		
 		
-		"/#!/{unique_id}": {
+		"/{unique_id}": {
 		"post": {
         "tags": [ "Cars_Array" ],
         "summary": "Update cars list",
