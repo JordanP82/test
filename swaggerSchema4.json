@@ -1,0 +1,108 @@
+{
+
+    "paths": {
+        "/JordanP82/test/master/payload.json": {
+            "parameters": [],
+            "get": {
+                "tags": [
+                    "Cars_Array"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An operation",
+                        "headers": {
+                            "Retry-After": {
+                                "type": "integer"
+                            }
+                        },
+                        "schema": {
+                            "$ref": "#/definitions/response"
+                        },
+                    }
+                }
+            }
+        },
+		
+		
+		"/#!/{unique_id}": {
+		"post": {
+        "tags": [ "Cars_Array" ],
+        "summary": "Update cars list",
+        "description": "",
+        "operationId": "addCars",
+        "consumes": [ "application/json", "application/xml" ],
+        "produces": [ "application/xml", "application/json" ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Update cars list",
+            "required": true,
+            "schema": { "$ref": "#/definitions/response" }
+          }
+        ],
+        "responses": { 
+			"405": { "description": "Invalid input" },
+			"200": { "description": "successful operation"}
+            
+          }			
+			
+			}
+      }
+		
+		
+		
+    },
+
+    "definitions": {
+
+        "response": {
+            "type": "object",
+            "properties": {
+				
+	
+	
+
+	"cars": {
+		"type": "object",
+		"properties": {
+			"Nissan": {
+				"type": "array",
+				"items": {
+					"type": "object",
+					"properties": {
+						"model": {
+							"type": "string"
+						},
+						"doors": {
+							"type": "integer",
+							"format": "int32"
+						}
+					}
+				}
+			},
+			"Ford": {
+				"type": "array",
+				"items": {
+					"type": "object",
+					"properties": {
+						"model": {
+							"type": "string"
+						},
+						"doors": {
+							"type": "integer",
+							"format": "int32"
+						}
+					}
+				}
+			}
+		}
+	}
+
+				
+				
+
+        }
+    }
+}
+}
