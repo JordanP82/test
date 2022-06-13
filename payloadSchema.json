@@ -46,7 +46,7 @@
                     "type": "string"
                 },
                 "doors": {
-                    "type": "integer"
+                    "type": "string"
                 }
             },
             "required": [
