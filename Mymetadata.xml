@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://us-jpeters1:443/SSOTester/SSO/AuthRequest">
+    <IDPSSODescriptor WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <KeyDescriptor use="signing">
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:X509Data>
+                    <ds:X509Certificate>
+MIICDzCCAXigAwIBAgICA4QwDQYJKoZIhvcNAQEFBQAwTTELMAkGA1UEBhMCVVMxCzAJBgNVBAgM
+Ak5ZMRMwEQYDVQQKDApDZXJ0c19SX1VzMRwwGgYDVQQDDBNub3RyZWFsQGV4YW1wbGUuY29tMB4X
+DTE0MDcwNzE4NTk1OVoXDTI0MDcwNzE4NTk1OVowTTELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAk5Z
+MRMwEQYDVQQKDApDZXJ0c19SX1VzMRwwGgYDVQQDDBNub3RyZWFsQGV4YW1wbGUuY29tMIGfMA0G
+CSqGSIb3DQEBAQUAA4GNADCBiQKBgQDIZT2zCyaZoynWvn/lbvSmhJaIoLgfuK/+RlJiGnuSoS5R
+GweqO2LrZfhc5e1rftH9zUK91Mr3EIVJG/xGPbmi+fJBpNawARSF5WC+Gmg1IgRhA3fiRmCjhpMJ
++pExjB6zUmSToxVe6P6iELfZ2q40cpUPnna8Tacr6eo98TkSnQIDAQABMA0GCSqGSIb3DQEBBQUA
+A4GBAMSq5+CG/mrPfObBZG1v3Ehc7QW0NOhVKjXbLg03CkeaHfO7RrhDQ9aVlFc570vBLixlB2cA
+XWFezAANSR6P18Kbs5z1mQiY0KZkzTJbaxS4zas5ee4cVs6yuEucZQzeRKJ3jy9x7L99ZPFJPDeu
+5epHj9jTABKRglCIyY1THIJr
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://us-jpeters1:443/SSOTester/SSO/AuthRequest"/>
+    </IDPSSODescriptor>
+</EntityDescriptor>
