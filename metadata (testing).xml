@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" entityID="http://localhost:8080/SSOTester/SSO/AuthRequest">
+    <IDPSSODescriptor WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <KeyDescriptor use="signing">
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:X509Data>
+                    <ds:X509Certificate>
+MIIDDDCCAfSgAwIBAgIQG0bjRK/JOqVOxz8wUlw3DDANBgkqhkiG9w0BAQsFADATMREwDwYDVQQD
+DAhUZXN0Q2VydDAeFw0yNjAzMDIyMzQwNDBaFw0yNzAzMDIyMzUwMzdaMBMxETAPBgNVBAMMCFRl
+c3RDZXJ0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2cYc3EcHp1yePFRSXLjV0yhX
+Lx8d5kQ3SLJC6S8ZCUCuCws/IvKuJfGKWZN8QWoyGJ6U4dHF84YxGhhU9c8x4B0rPIYnlikQQy80
+K3xUhBNLGXMd0pmVz7bl64DH2LBOPH6lmM0k1H4HS5CfBZ7ZOXoD+erPpFY6c2/4saX+lfSKhnyp
+maDDmY+48KUHQV9u3mAMZq7af4HPu5WN5KGEqctW1xZIMPdRhPZsIWy/KmohTMesiE4/Q5QYyyJO
+GA8w3uKHoftjFkxGZMvAPvt1VJ2DEtKu2vUQOxjgfCXdUto8gBUHfxkKrHJJGJQLpK0HV4Dd6qnt
+TpE5PCB7NtqhtQIDAQABo1wwWjAOBgNVHQ8BAf8EBAMCBaAwFAYDVR0RBA0wC4IJbG9jYWxob3N0
+MBMGA1UdJQQMMAoGCCsGAQUFBwMBMB0GA1UdDgQWBBSzzu+TH7KOWVx7VW/CNhjGxREJxTANBgkq
+hkiG9w0BAQsFAAOCAQEADwGndqSWK7TlTet9cUpOoqcoGBVvqgH6m4l0woNLJl04U2+gYehuBSvM
+AaMbLIPa69imKuZaqjQO62fOFeA8if6ZM2uoWGiVN0I5scis5t6Cf1wTjE6yXzeEiEChwtODNbFj
+iAb5Q5lCqOBea8EBGUQYh6ItqSIahgU3mmFjwiNkDROAfV2/QKhHNA5nBdyPxC8lDPh+lG1+Stog
+Zcti2VeJCzASRpybFrf5FX4JukxTGF4nE9T5hGyXYVRRg4fTykxOb6xj6WSTjRBycUP6p6A6/AuT
+uJPrS2rXz8wbodeA/pwY0Fd0Gcsx8EM74F218YqHTe/GdDbydVmf/w6kkQ==
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:8080/SSOTester/SSO/AuthRequest"/>
+    </IDPSSODescriptor>
+</EntityDescriptor>
